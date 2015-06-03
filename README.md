@@ -11,8 +11,9 @@ the real project.
 # Compilation
 
      git clone https://github.com/kwk/asan-dlopen-issue.git
-     cd asan-dlopen
+     cd asan-dlopen-issue
      mkdir build
+     cd build
      export CC=$(which clang)
      cmake ..
      make

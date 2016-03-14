@@ -1,0 +1,5 @@
+#!/bin/bash
+
+export LSAN_OPTIONS=suppressions=${CMAKE_SOURCE_DIR}/suppressions.txt;print_suppressions=0
+export ASAN_OPTIONS=symbolize=1:log_path=${CMAKE_BINARY_DIR}/asan-;
+./myprog 
